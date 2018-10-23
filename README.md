@@ -2,6 +2,9 @@
     - Trello: https://trello.com/kaggle2sigma
     - Google Drive: https://drive.google.com/drive/folders/1pW6ZFw9es4CLpMq67rbtjhxD20LBLmGH?usp=sharing
 
+## Utilities
+    -How to Google Colab with kaggle: https://medium.com/@move37timm/using-kaggle-api-for-google-colaboratory-d18645f93648
+
 ## Project Plan
 1. Brain-storming ideas and research for relevant techniques and resources
 2. Baseline models
