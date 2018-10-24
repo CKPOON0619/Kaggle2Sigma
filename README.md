@@ -13,6 +13,7 @@ https://www.kaggle.com/c/two-sigma-financial-news/data
 To fetch a larger dataset for experiment and local development:
 https://www.kaggle.com/ckpoon19890129/experimental-data-download/output?scriptVersionId=6755809
 
+
 ## Utilities
     -How to Google Colab with kaggle: https://medium.com/@move37timm/using-kaggle-api-for-google-colaboratory-d18645f93648
     -The submission will be in the form of kaggle kernel: https://www.kaggle.com/docs/kernels#types-of-kernels
@@ -28,12 +29,16 @@ https://www.kaggle.com/ckpoon19890129/experimental-data-download/output?scriptVe
 ## 1. Ideas & Research
 
 - Stocks similarity:
-    - stocks embedding: coocurence? Price correlations?
+    - stocks embedding: 
+        - Price correlations initialisation
+        - Each stock as trainable variables
     - Entity tagging: https://spacy.io/api/
 
 - News Summarisation:
+    https://arxiv.org/pdf/1705.03122.pdf
     - word/document embeddings: word2vec, fasttext, NNLM - google news, universal sentence encoder
-    - attention mechanism: certain stocks paying attention to certain news
+    - attention mechanism: 
+        - Using stock similarity embeddings and news objects colume to form attention-key pairs
     - Convolution embedding
 
 - Quantify stock price:
@@ -46,9 +51,11 @@ https://www.kaggle.com/ckpoon19890129/experimental-data-download/output?scriptVe
 - Possible Models:
     Two predictive elements: 
         - News
-        - Price Records
+        - Price Records(latent state)
 
     - seq2seq encoder-decoder RNN structure: F(newsEmbedding,priceRecords)->priceForeCasts
     - Simple regression model: Regressor(Features(news,priceRecord)) 
     - seq2seq model: https://github.com/Arturus/kaggle-web-traffic/blob/master/how_it_works.md
 
+- Baseline kernels:
+    lgb: https://www.kaggle.com/kazuokiriyama/tuning-hyper-params-in-lgbm-achieve-0-66-in-lb
