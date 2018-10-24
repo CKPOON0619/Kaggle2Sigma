@@ -1,9 +1,22 @@
 # Kaggle2Sigma
+About this competition read the link: https://www.kaggle.com/c/two-sigma-financial-news
+Which include explanation to the competition and the data.
+
+For the project, these sources are setup for use.
     - Trello: https://trello.com/kaggle2sigma
     - Google Drive: https://drive.google.com/drive/folders/1pW6ZFw9es4CLpMq67rbtjhxD20LBLmGH?usp=sharing
+    - Slack: https://pythonnmlinterest.slack.com/messages/CDLF9UR4M/
+
+## Datasets
+https://www.kaggle.com/c/two-sigma-financial-news/data
+
+To fetch a larger dataset for experiment and local development:
+https://www.kaggle.com/ckpoon19890129/experimental-data-download/output?scriptVersionId=6755809
 
 ## Utilities
     -How to Google Colab with kaggle: https://medium.com/@move37timm/using-kaggle-api-for-google-colaboratory-d18645f93648
+    -The submission will be in the form of kaggle kernel: https://www.kaggle.com/docs/kernels#types-of-kernels
+    -To load the data and making submission: https://www.kaggle.com/dster/two-sigma-news-official-getting-started-kernel
 
 ## Project Plan
 1. Brain-storming ideas and research for relevant techniques and resources
@@ -35,5 +48,7 @@
         - News
         - Price Records
 
-    - encoder-decoder RNN structure: F(newsEmbedding,priceRecords)->priceForeCasts
+    - seq2seq encoder-decoder RNN structure: F(newsEmbedding,priceRecords)->priceForeCasts
     - Simple regression model: Regressor(Features(news,priceRecord)) 
+    - seq2seq model: https://github.com/Arturus/kaggle-web-traffic/blob/master/how_it_works.md
+
