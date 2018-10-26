@@ -41,7 +41,7 @@ https://www.kaggle.com/ckpoon19890129/experimental-data-download/output?scriptVe
         - Using stock similarity embeddings and news objects colume to form attention-key pairs
     - Convolution embedding
 
-- Quantify stock price:
+- Quantify signals:
     - Time series features engineering: 
         - Reference to EEG detection challenge:http://blog.kaggle.com/2015/10/05/grasp-and-lift-eeg-detection-winners-interview-3rd-place-team-hedj/
     - Percentage changes
@@ -53,6 +53,7 @@ https://www.kaggle.com/ckpoon19890129/experimental-data-download/output?scriptVe
         - News
         - Price Records(latent state)
 
+    - CNN tranlation with attention: https://arxiv.org/pdf/1705.03122.pdf
     - seq2seq encoder-decoder RNN structure: F(newsEmbedding,priceRecords)->priceForeCasts
     - Simple regression model: Regressor(Features(news,priceRecord)) 
     - seq2seq model: https://github.com/Arturus/kaggle-web-traffic/blob/master/how_it_works.md
