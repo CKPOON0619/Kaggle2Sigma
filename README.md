@@ -53,7 +53,7 @@ https://www.kaggle.com/ckpoon19890129/experimental-data-download/output?scriptVe
         - News
         - Price Records(latent state)
 
-    - CNN tranlation with attention: https://arxiv.org/pdf/1705.03122.pdf
+    - CNN translation with attention: https://arxiv.org/pdf/1705.03122.pdf ![CNN_bluePrint](CNN_blueprintModel.png)
     - seq2seq encoder-decoder RNN structure: F(newsEmbedding,priceRecords)->priceForeCasts
     - Simple regression model: Regressor(Features(news,priceRecord)) 
     - seq2seq model: https://github.com/Arturus/kaggle-web-traffic/blob/master/how_it_works.md
